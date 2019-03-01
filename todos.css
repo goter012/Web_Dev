@@ -1,0 +1,22 @@
+body{
+	background:orange;
+}
+li{
+	border:2px solid red ;
+}
+
+#special{
+	color:yellow;
+}
+
+#other{
+	color:blue;
+}
+
+div{
+	background:purple;
+}
+.highlight{
+	color:red;
+	text-decoration: line-through;
+}

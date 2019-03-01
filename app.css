@@ -1,0 +1,23 @@
+	h1{
+			color:rgba(0,200,150,.5);
+			/*border-width: 1px;
+			border-color:purple;
+			border-style:solid;*/
+
+			border:8px dashed rgb(255,100,100);
+		}
+
+		
+	li{
+			color:orange;
+	}
+
+	h4{
+		background:rgb(255,100,100);
+	}
+	
+	body{
+		/*background-repeat:no-repeat;
+		background-size:cover;
+		background: url(http://www.createmepink.com/wp-content/uploads/wo/thumb-wood-grain-texture-seamless-wooden-pattern-abstract-line-background-wood-grain-texture-seamless-wooden-pattern-abstract-line-image.jpg);
+	}*/}

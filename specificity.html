@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Specificity</title>
+	<style type = "text/css">
+		ul{
+			color:blue;
+		}
+		body{
+			color: red;
+		}
+		li{
+			color: orange;
+		}
+		.highlight{
+			color: yellow;
+		}
+		#special{
+			color:pink;
+		}
+
+	</style>
+</head>
+<body>
+<!-- Specificity - We can have multiple styles targeting an element. CSS has to decide what style will come to the screen, by choosing which style talks about the most specific element -->
+	<p>Hello!!</p>
+<ul>
+	<li id = "special"class ="highlight">John</li>
+	<li class ="highlight">Paul</li>
+	<li>George </li>
+	<li>Ringo</li>
+</ul>
+</body>
+</html>

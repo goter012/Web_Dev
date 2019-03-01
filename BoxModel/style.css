@@ -1,0 +1,12 @@
+p{
+	width:50%;
+	
+	border: 2px solid blue;
+
+	padding-left:40px;
+
+	/*padding is space between parent element, in this case, body.*/
+
+	/*margin: 20px 40px 500px 100px;*/
+	margin: 0 auto;
+}
