@@ -6,26 +6,21 @@ var p1Score= 0;
 var gameOver= false;
 var p2Score=0;
 var resetButton = document.querySelector("#resetButton");
-var input = document.getElementsByTagName("input");
+var inputField = document.querySelector("#gameScore");
 var gameOverScore = document.querySelector("#gameLimit");
 
-input.addEventListener("change",function(){
-    gameOverScore.textContent = input.value;
+inputField.addEventListener("change",function(){
+    gameOverScore.textContent = inputField.value;
 });
 resetButton.addEventListener("click",function(){
-    gameOver = false;
-    p1Score = 0;
-    p2Score = 0;
-    p1span.textContent = 0;
-    p2span.textContent = 0;
-    p1span.classList.remove("winner");
-    p2span.classList.remove("winner");
+    resetGame();
 
 });
 var winningScore = 5;
 p1Button.addEventListener("click", function(){
     if(!gameOver){
         p1Score++;
+        console.log(p1Score, winningScore);
         if(p1Score === winningScore){
             p1span.classList.add("winner");
             gameOver = true;
@@ -45,3 +40,18 @@ p2Button.addEventListener("click", function(){
     p2span.textContent = p2Score;
     }
 });
+inputField.addEventListener("change",function(){
+    gameOverScore.textContent = inputField.value;
+    winningScore = Number(inputField.value);
+    resetGame();
+});
+
+const resetGame = function(){
+    gameOver = false;
+    p1Score = 0;
+    p2Score = 0;
+    p1span.textContent = 0;
+    p2span.textContent = 0;
+    p1span.classList.remove("winner");
+    p2span.classList.remove("winner");
+};
